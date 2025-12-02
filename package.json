@@ -2,23 +2,42 @@
     "name": "tailwind",
     "version": "1.0.0",
     "description": "",
+    "type": "module",
     "main": "tailwind.config.js",
     "scripts": {
         "start:server": "live-server --port=3000 --open=./index.html",
         "dev:css": "tailwindcss -i ./src/tailwind.css -o ./assets/css/style.css --watch",
         "start": "concurrently \"npm:start:server\" \"npm run dev:css\"",
-        "minify": "tailwindcss -o ./assets/css/style.min.css --minify"
+        "minify": "tailwindcss -o ./assets/css/style.min.css --minify",
+        "clean": "rimraf _site",
+        "dev:11ty": "eleventy --serve --quiet --incremental",
+        "dev:tailwind": "tailwindcss -i ./src/tailwind.css -o ./_site/assets/css/style.css --watch",
+        "dev:11ty-all": "npm-run-all clean --parallel dev:11ty dev:tailwind",
+        "build:11ty": "eleventy",
+        "build:tailwind": "tailwindcss -i ./src/tailwind.css -o ./_site/assets/css/style.css --minify",
+        "build:all": "npm-run-all clean build:11ty build:tailwind"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "@11ty/eleventy": "^3.1.2",
+        "@types/react": "^19.2.7",
+        "@types/react-dom": "^19.2.3",
         "browserslist": "^4.28.0",
         "caniuse-lite": "^1.0.30001757",
         "concurrently": "^8.2.2",
         "live-server": "^1.2.2",
+        "npm-run-all": "^4.1.5",
         "prettier": "^3.1.1",
         "prettier-plugin-tailwindcss": "^0.5.9",
-        "tailwindcss": "^3.4.0"
+        "rimraf": "^6.1.2",
+        "tailwindcss": "^3.4.0",
+        "tsx": "^4.21.0",
+        "typescript": "^5.9.3"
+    },
+    "dependencies": {
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0"
     }
 }

@@ -2,7 +2,8 @@
 module.exports = {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{html,njk,md,jsx,tsx,js,ts}",
+    "./_site/**/*.html",
   ],
   theme: {
     screens: {
