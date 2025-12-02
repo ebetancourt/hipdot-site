@@ -1,4 +1,6 @@
 import React from 'react';
+import Logo from './Logo.tsx';
+import SocialLink from './SocialLink.tsx';
 
 interface FooterProps {
   year?: number;
@@ -135,24 +137,12 @@ export default function Footer({ year = new Date().getFullYear() }: FooterProps)
 
                 {/* Footer Social Link */}
                 <div className="flex flex-wrap gap-4">
-                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-[#EAEDF0] text-sm text-black transition-all duration-300 hover:bg-[#0000FF] hover:text-white" aria-label="twitter">
-                    <i className="fa-brands fa-x-twitter"></i>
-                  </a>
-                  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-[#EAEDF0] text-sm text-black transition-all duration-300 hover:bg-[#0000FF] hover:text-white" aria-label="facebook">
-                    <i className="fa-brands fa-facebook-f"></i>
-                  </a>
-                  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-[#EAEDF0] text-sm text-black transition-all duration-300 hover:bg-[#0000FF] hover:text-white" aria-label="instagram">
-                    <i className="fa-brands fa-instagram"></i>
-                  </a>
-                  <a href="https://www.github.com/" target="_blank" rel="noopener noreferrer" className="flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-[#EAEDF0] text-sm text-black transition-all duration-300 hover:bg-[#0000FF] hover:text-white" aria-label="github">
-                    <i className="fa-brands fa-github"></i>
-                  </a>
-                  <a href="https://www.discord.com/" target="_blank" rel="noopener noreferrer" className="flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-[#EAEDF0] text-sm text-black transition-all duration-300 hover:bg-[#0000FF] hover:text-white" aria-label="discord">
-                    <i className="fa-brands fa-discord"></i>
-                  </a>
-                  <a href="https://www.github.com/" target="_blank" rel="noopener noreferrer" className="flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-[#EAEDF0] text-sm text-black transition-all duration-300 hover:bg-[#0000FF] hover:text-white" aria-label="tiktok">
-                    <i className="fa-brands fa-tiktok"></i>
-                  </a>
+                  <SocialLink platform="twitter" url="https://twitter.com" iconClass="fa-brands fa-x-twitter" />
+                  <SocialLink platform="facebook" url="https://www.facebook.com/" iconClass="fa-brands fa-facebook-f" />
+                  <SocialLink platform="instagram" url="https://www.instagram.com/" iconClass="fa-brands fa-instagram" />
+                  <SocialLink platform="github" url="https://www.github.com/" iconClass="fa-brands fa-github" />
+                  <SocialLink platform="discord" url="https://www.discord.com/" iconClass="fa-brands fa-discord" />
+                  <SocialLink platform="tiktok" url="https://www.tiktok.com/" iconClass="fa-brands fa-tiktok" />
                 </div>
               </div>
               {/* Footer Widget Item */}
@@ -173,9 +163,7 @@ export default function Footer({ year = new Date().getFullYear() }: FooterProps)
           <div className="container-default">
             <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-5 md:justify-between">
               {/* Footer Logo */}
-              <a href="index.html" className="">
-                <img src="/assets/img/logo-dark.png" alt="Masco" width="109" height="24" />
-              </a>
+              <Logo href="index.html" variant="dark" />
               {/* Footer Logo */}
               <div className="text-center">
                 &copy; Copyright {year}, All Rights Reserved by Hip Dot Media, Inc.

@@ -1,4 +1,6 @@
 import React from 'react';
+import Logo from './Logo.tsx';
+import Button from './Button.tsx';
 
 export default function Header() {
   return (
@@ -6,9 +8,7 @@ export default function Header() {
       <div className="container-default">
         <div className="flex items-center justify-between gap-x-8">
           {/* Header Logo */}
-          <a href="index.html" className="">
-            <img src="/assets/img/logo-dark.png" alt="Masco" width="109" height="24" />
-          </a>
+          <Logo href="index.html" variant="dark" />
           {/* Header Logo */}
 
           {/* Header Navigation */}
@@ -231,7 +231,9 @@ export default function Header() {
           {/* Header User Event */}
           <div className="flex items-center gap-6">
             <a href="login.html" className="btn-text hidden text-white hover:text-ColorBlue sm:inline-block">Login</a>
-            <a href="signup.html" className="btn is-blue is-transparent btn-animation group hidden rounded-[3px] sm:inline-block"><span>Sign up free</span></a>
+            <Button variant="primary" href="signup.html" className="hidden sm:inline-block">
+              Sign up free
+            </Button>
             {/* Responsive Offcanvas Menu Button */}
             <div className="block lg:hidden">
               <button id="openBtn" className="hamburger-menu mobile-menu-trigger">
