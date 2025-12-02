@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }} - Masco</title>
+    <meta name="description" content="{{ description }}" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/img/favicon.png" />
+
+    <!-- Icon Font -->
+    <link rel="stylesheet" href="/assets/fonts/iconfonts/font-awesome/stylesheet.css" />
+    <!-- Site fonts -->
+    <link rel="stylesheet" href="/assets/fonts/webfonts/inter/stylesheet.css" />
+    <link rel="stylesheet" href="/assets/fonts/webfonts/syne/stylesheet.css" />
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="/assets/css/vendors/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/assets/css/vendors/jos.css" />
+    <link rel="stylesheet" href="/assets/css/vendors/menu.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/custom.css" />
+
+    <!-- Tailwind CSS -->
+    <link href="/assets/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="page-wrapper relative z-[1] bg-white">
+        {{ content | safe }}
+    </div>
+
+    <!-- Vendor Scripts -->
+    <script src="/assets/js/vendors/counterup.js" type="module"></script>
+    <script src="/assets/js/vendors/swiper-bundle.min.js"></script>
+    <script src="/assets/js/vendors/fslightbox.js"></script>
+    <script src="/assets/js/vendors/jos.min.js"></script>
+    <script src="/assets/js/vendors/menu.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
