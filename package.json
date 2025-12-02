@@ -15,29 +15,45 @@
         "dev:11ty-all": "npm-run-all clean --parallel dev:11ty dev:tailwind",
         "build:11ty": "eleventy",
         "build:tailwind": "tailwindcss -i ./src/tailwind.css -o ./_site/assets/css/style.css --minify",
-        "build:all": "npm-run-all clean build:11ty build:tailwind"
+        "build:all": "npm-run-all clean build:11ty build:tailwind",
+        "storybook": "storybook dev -p 6006",
+        "build-storybook": "storybook build"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
         "@11ty/eleventy": "^3.1.2",
+        "@storybook/addon-essentials": "^8.6.14",
+        "@storybook/addon-interactions": "^8.6.14",
+        "@storybook/addon-links": "^8.6.14",
+        "@storybook/blocks": "^8.6.14",
+        "@storybook/react": "^8.6.14",
+        "@storybook/react-vite": "^8.6.14",
+        "@storybook/test": "^8.6.14",
         "@types/react": "^19.2.7",
         "@types/react-dom": "^19.2.3",
+        "autoprefixer": "^10.4.22",
         "browserslist": "^4.28.0",
         "caniuse-lite": "^1.0.30001757",
         "concurrently": "^8.2.2",
         "live-server": "^1.2.2",
         "npm-run-all": "^4.1.5",
+        "postcss": "^8.5.6",
         "prettier": "^3.1.1",
         "prettier-plugin-tailwindcss": "^0.5.9",
         "rimraf": "^6.1.2",
+        "storybook": "^8.6.14",
         "tailwindcss": "^3.4.0",
         "tsx": "^4.21.0",
-        "typescript": "^5.9.3"
+        "typescript": "^5.9.3",
+        "vite": "^6.4.1"
     },
     "dependencies": {
         "react": "^19.2.0",
         "react-dom": "^19.2.0"
+    },
+    "overrides": {
+        "fsevents": "^2.3.3"
     }
 }

@@ -21,6 +21,7 @@ package-lock.json
 dist/
 build/
 _site/
+storybook-static/
 *.min.css
 *.min.js
 
