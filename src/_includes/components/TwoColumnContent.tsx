@@ -26,8 +26,8 @@ export default function TwoColumnContent({
   ctaText = null,
   ctaHref = '#'
 }: TwoColumnContentProps) {
-  const imageOrder = imagePosition === 'right' ? 'order-2 lg:order-1' : 'order-1 lg:order-2';
-  const contentOrder = imagePosition === 'right' ? 'order-1 lg:order-2' : 'order-2 lg:order-1';
+  const imageOrder = imagePosition === 'left' ? 'order-2 lg:order-1' : 'order-2';
+  const contentOrder = imagePosition === 'left' ? 'order-1 lg:order-2' : 'order-1';
 
   return (
     <div className={`grid items-center gap-10 ${imagePosition === 'right' ? 'lg:grid-cols-[1fr_minmax(0,_0.75fr)]' : 'lg:grid-cols-[0.7fr_minmax(0,_1fr)]'} lg:gap-24 xl:gap-[110px]`}>
