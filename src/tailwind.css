@@ -5,7 +5,7 @@
 @layer base {
   body,
   .page-wrapper {
-    @apply min-h-screen font-body text-lg leading-[1.66] text-ColorBlack/80;
+    @apply min-h-screen font-sans text-lg leading-[1.66] text-black/80;
   }
 
   /* Default Heading */
@@ -15,7 +15,7 @@
   h4,
   h5,
   h6 {
-    @apply font-PlusJakartaSans font-extrabold leading-[1.05] -tracking-[2px] text-ColorBlack;
+    @apply font-Syne font-extrabold leading-[1.05] -tracking-[2px] text-black;
   }
 
   h1 {
@@ -57,7 +57,7 @@
   }
 
   .btn-animation {
-    @apply overflow-hidden before:absolute before:-left-[10%] before:-top-[110%] before:h-0 before:w-[120%] before:rounded-[50%] before:bg-white before:pb-[120%] before:[transform:translate3d(0,_68%,_0)_scale3d(0,_0,_0)]  after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-white after:[transform:translate3d(0,_-100%,_0)] after:[transition:transform_0.4s_cubic-bezier(0.1,_0,_0.3,_1)] hover:bg-ColorBlack hover:before:[transform:translate3d(0,_0,_0)_scale3d(1,_1,_1)] hover:before:[transition:transform_0.4s_cubic-bezier(0.1,_0,_0.3,_1)] hover:after:transition-all hover:after:delay-[400ms] hover:after:duration-[500ms] hover:after:ease-linear hover:after:[transform:translate3d(0,_0,_0)];
+    @apply overflow-hidden before:absolute before:-left-[10%] before:-top-[110%] before:h-0 before:w-[120%] before:rounded-[50%] before:bg-white before:pb-[120%] before:[transform:translate3d(0,_68%,_0)_scale3d(0,_0,_0)]  after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-white after:[transform:translate3d(0,_-100%,_0)] after:[transition:transform_0.4s_cubic-bezier(0.1,_0,_0.3,_1)] hover:bg-black hover:before:[transform:translate3d(0,_0,_0)_scale3d(1,_1,_1)] hover:before:[transition:transform_0.4s_cubic-bezier(0.1,_0,_0.3,_1)] hover:after:transition-all hover:after:delay-[400ms] hover:after:duration-[500ms] hover:after:ease-linear hover:after:[transform:translate3d(0,_0,_0)];
   }
 
   .is-transparent {
@@ -76,81 +76,31 @@
   }
 
   .is-blue {
-    @apply border-ColorBlue bg-ColorBlue text-white hover:bg-transparent hover:text-ColorBlue;
-  }
-
-  .is-purple {
-    @apply border-ColorPurple bg-ColorPurple text-white hover:bg-transparent hover:text-ColorPurple;
-  }
-
-  .is-black {
-    @apply border-ColorBlack bg-ColorBlack text-white hover:bg-transparent hover:text-ColorBlack;
-  }
-
-  .is-yellow {
-    @apply border-ColorBlack bg-ColorYellow text-ColorBlack;
-  }
-
-  .is-violet {
-    @apply border-black bg-ColorViolet text-white;
-  }
-
-  .is-atomic-tangerine {
-    @apply border-ColorAtomicTangerine bg-ColorAtomicTangerine text-black hover:bg-white;
-  }
-
-  .is-lime {
-    @apply border-ColorLime bg-ColorLime text-black hover:border-ColorBlack hover:bg-white;
-  }
-
-  .is-lunar-green {
-    @apply border-ColorLunarGreen bg-ColorLunarGreen text-ColorCorn hover:border-ColorBlack hover:bg-ColorCorn hover:text-ColorLunarGreen;
-  }
-  .is-denim {
-    @apply border-ColorDenimDarkBlue bg-ColorDenimDarkBlue text-ColorPaleGold hover:border-ColorDenimDarkBlue hover:bg-transparent hover:text-ColorDenimDarkBlue;
-  }
-  .is-pale-gold {
-    @apply border-ColorPaleGold bg-ColorPaleGold text-ColorDenimDarkBlue hover:border-ColorPaleGold hover:bg-transparent hover:text-ColorPaleGold;
-  }
-  .is-caribbean-green{
-    @apply border-ColorCaribbeanGreen bg-ColorCaribbeanGreen text-ColorMidnightMoss hover:bg-transparent hover:border-ColorCaribbeanGreen hover:text-ColorCaribbeanGreen ;
-  }
-  .is-honey-suckle{
-    @apply border-ColorHoneySuckle bg-ColorHoneySuckle hover:bg-transparent text-[#2B13B9] hover:text-ColorHoneySuckle;
-  }
-  .is-honey-suckle-2{
-    @apply border-ColorHoneySuckle bg-ColorHoneySuckle hover:bg-transparent text-[#2B13B9] hover:text-ColorHoneySuckle hover:bg-[#2B13B9] hover:border-[#2B13B9];
+    @apply border-primary bg-primary text-white hover:bg-transparent hover:text-primary;
   }
 
   .is-outline-white {
-    @apply border-white bg-transparent text-white hover:bg-white hover:text-ColorBlack;
+    @apply border-white bg-transparent text-white hover:bg-white hover:text-black;
   }
+
   .is-outline-black {
-    @apply border-ColorBlack bg-transparent text-ColorBlack hover:bg-ColorBlack hover:text-ColorBlack;
-  }
-  .is-outline-denim {
-    @apply border-ColorDenimDarkBlue bg-transparent text-ColorDenimDarkBlue hover:bg-ColorDenimDarkBlue hover:text-ColorPaleGold;
-  }
-  .is-outline-palegold {
-    @apply border-ColorPaleGold bg-transparent text-ColorPaleGold before:bg-ColorPaleGold after:bg-ColorPaleGold hover:bg-ColorPaleGold hover:text-ColorDenimDarkBlue;
-  }
-  .is-outline-midnight-moss {
-    @apply border-ColorMidnightMoss bg-transparent text-ColorMidnightMoss before:bg-ColorMidnightMoss after:bg-ColorMidnightMoss hover:bg-ColorMidnightMoss hover:text-white;
+    @apply border-black bg-transparent text-black hover:bg-black hover:text-white;
   }
 
   .tab-btn-blue {
-    @apply border-none bg-ColorBlack/5 text-ColorBlack/60 hover:bg-ColorBlue hover:text-white;
+    @apply border-none bg-black/5 text-black/60 hover:bg-primary hover:text-white;
   }
 
   .tab-btn-blue.active {
-    @apply border-none bg-ColorBlue text-white;
+    @apply border-none bg-primary text-white;
   }
 
   .is-white {
-    @apply border-ColorBlack bg-white text-ColorBlack hover:bg-ColorBlack hover:text-white;
+    @apply border-black bg-white text-black hover:bg-black hover:text-white;
   }
+
   .is-dark {
-    @apply border-ColorDark bg-ColorDark  text-white;
+    @apply border-dark bg-dark text-white;
   }
   .is-rounded {
     @apply rounded-[50px];
@@ -207,7 +157,7 @@
 
 /* Breadcrumb */
 .breadcrumb-wrapper {
-  @apply relative z-10 bg-ColorOffWhite pb-[50px] pt-[105px] lg:pb-[70px] lg:pt-[135px] xl:pb-[120px] xl:pt-[165px];
+  @apply relative z-10 bg-gray-50 pb-[50px] pt-[105px] lg:pb-[70px] lg:pt-[135px] xl:pb-[120px] xl:pt-[165px];
 }
 
 .breadcrumb-block {
@@ -223,11 +173,11 @@
 }
 
 .breadcrumb-nav li {
-  @apply relative text-black after:absolute after:-right-8 after:top-1/2 after:h-5 after:w-5 after:-translate-y-1/2 after:bg-[url(../img/icons/icon-black-chevron-right-solid.svg)] after:bg-cover last:font-semibold last:text-ColorBlue last:after:bg-none;
+  @apply relative text-black after:absolute after:-right-8 after:top-1/2 after:h-5 after:w-5 after:-translate-y-1/2 after:bg-[url(../img/icons/icon-black-chevron-right-solid.svg)] after:bg-cover last:font-semibold last:text-primary last:after:bg-none;
 }
 
 .breadcrumb-nav a {
-  @apply font-semibold transition-all duration-300 hover:text-ColorBlue;
+  @apply font-semibold transition-all duration-300 hover:text-primary;
 }
 
 /* Accordion */
@@ -246,7 +196,7 @@
 }
 
 .accordion-solid-shadow {
-  @apply relative z-10 after:absolute after:inset-0 after:-z-10 after:translate-x-0 after:translate-y-0 after:rounded-[10px] after:bg-ColorBlack after:transition-all after:duration-300;
+  @apply relative z-10 after:absolute after:inset-0 after:-z-10 after:translate-x-0 after:translate-y-0 after:rounded-[10px] after:bg-black after:transition-all after:duration-300;
 }
 
 .accordion-solid-shadow.active {
@@ -276,13 +226,13 @@
 .accordion-item .accordion-icon-5  {
   @apply bg-transparent transition-all duration-300;
  }
- 
+
  /* Accordion 6 */
  .accordion-item .accordion-icon-6 span {
   @apply first:bg-black;
 }
 .accordion-item.active .accordion-icon-6 span {
-  @apply first:bg-[#0000FF];
+  @apply first:bg-primary;
 }
 
 .accordion-item.active .accordion-icon-6 span:last-child {
@@ -290,7 +240,7 @@
 }
 
 .accordion-item.active .accordion-icon-5  {
-  @apply bg-ColorMidnightMoss text-ColorCaribbeanGreen rotate-45;
+  @apply bg-black text-white rotate-45;
  }
 
 .accordion-item.active:has(.accordion-icon-4) {
@@ -307,7 +257,7 @@
 
 /* Tab */
 .tab-text.active {
-  @apply text-ColorBlue;
+  @apply text-primary;
 }
 
 .process-tab {
@@ -315,7 +265,7 @@
 }
 
 .process-tab.active {
-  @apply bg-ColorCorn text-ColorLunarGreen;
+  @apply bg-primary text-white;
 }
 
 .process-tab img {
@@ -328,13 +278,13 @@
 
 /* Hover Effects */
 .hover-solid-shadow {
-  @apply relative z-10 after:absolute after:inset-0 after:-z-10 after:rounded-[10px] after:bg-ColorBlack after:transition-all after:duration-300 hover:after:translate-x-[10px] hover:after:translate-y-[10px];
+  @apply relative z-10 after:absolute after:inset-0 after:-z-10 after:rounded-[10px] after:bg-black after:transition-all after:duration-300 hover:after:translate-x-[10px] hover:after:translate-y-[10px];
 }
 
 /* Testimonial Slider */
 .testimonial-slider-area-1 .swiper-pagination-bullet {
-  @apply !mx-[6px] h-[10px] w-[10px] bg-ColorDark/80;
+  @apply !mx-[6px] h-[10px] w-[10px] bg-dark/80;
 }
 .testimonial-slider-area-1 .swiper-pagination-bullet-active {
-  @apply h-[10px] w-[10px] bg-ColorDark;
+  @apply h-[10px] w-[10px] bg-dark;
 }
