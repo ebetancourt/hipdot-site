@@ -1,5 +1,5 @@
 import React from 'react';
-import ProcessStep from './ProcessStep.tsx';
+import ProcessStep from '../ProcessStep/index.ts';
 
 interface ProcessStepData {
   title: string;

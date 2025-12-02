@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from './Button.tsx';
-import IconBulletList from './IconBulletList.tsx';
+import Button from '../Button/index.ts';
+import IconBulletList from '../IconBulletList/index.ts';
 
 interface Feature {
   title: string;

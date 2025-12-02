@@ -1,20 +1,20 @@
 import React from 'react';
-import ServiceCard from './ServiceCard.tsx';
+import TeamMemberCard from '../TeamMemberCard/index.ts';
 
-interface Service {
+interface TeamMember {
+  imageSrc: string;
+  name: string;
   title: string;
-  description: string;
-  link: string;
 }
 
-interface ServicesSectionProps {
+interface TeamSectionProps {
   title: string;
-  services: Service[];
+  members: TeamMember[];
 }
 
-export default function ServicesSection({ title, services }: ServicesSectionProps) {
+export default function TeamSection({ title, members }: TeamSectionProps) {
   return (
-    <section className="section-service">
+    <section className="section-team">
       <div className="bg-black">
         <div className="section-space">
           <div className="container-default">
@@ -28,13 +28,14 @@ export default function ServicesSection({ title, services }: ServicesSectionProp
               </div>
             </div>
 
-            <div className="grid grid-cols-1 gap-y-6">
-              {services.map((service, index) => (
-                <ServiceCard
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {members.map((member, index) => (
+                <TeamMemberCard
                   key={index}
-                  title={service.title}
-                  description={service.description}
-                  link={service.link}
+                  imageSrc={member.imageSrc}
+                  name={member.name}
+                  title={member.title}
+                  delay={index * 0.3}
                 />
               ))}
             </div>

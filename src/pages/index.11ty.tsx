@@ -1,15 +1,15 @@
 import React from 'react';
-import Header from '../_includes/components/Header.tsx';
-import Footer from '../_includes/components/Footer.tsx';
-import Hero from '../_includes/components/Hero.tsx';
-import HorizontalLine from '../_includes/components/HorizontalLine.tsx';
-import StatsSection from '../_includes/components/StatsSection.tsx';
-import ServicesSection from '../_includes/components/ServicesSection.tsx';
-import TwoColumnContent from '../_includes/components/TwoColumnContent.tsx';
-import ProcessSection from '../_includes/components/ProcessSection.tsx';
-import TeamSection from '../_includes/components/TeamSection.tsx';
-import FaqSection from '../_includes/components/FaqSection.tsx';
-import CtaSection from '../_includes/components/CtaSection.tsx';
+import Header from '../_includes/components/Header/index.ts';
+import Footer from '../_includes/components/Footer/index.ts';
+import Hero from '../_includes/components/Hero/index.ts';
+import HorizontalLine from '../_includes/components/HorizontalLine/index.ts';
+import StatsSection from '../_includes/components/StatsSection/index.ts';
+import ServicesSection from '../_includes/components/ServicesSection/index.ts';
+import TwoColumnContent from '../_includes/components/TwoColumnContent/index.ts';
+import ProcessSection from '../_includes/components/ProcessSection/index.ts';
+import TeamSection from '../_includes/components/TeamSection/index.ts';
+import FaqSection from '../_includes/components/FaqSection/index.ts';
+import CtaSection from '../_includes/components/CtaSection/index.ts';
 
 interface HomePageData {
   homepage: any;

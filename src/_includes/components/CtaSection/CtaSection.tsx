@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from './Button.tsx';
-import FormField from './FormField.tsx';
-import BrandLogo from './BrandLogo.tsx';
+import Button from '../Button/index.ts';
+import FormField from '../FormField/index.ts';
+import BrandLogo from '../BrandLogo/index.ts';
 
 interface Brand {
   src: string;

@@ -1,7 +1,7 @@
 import React from 'react';
-import Logo from './Logo.tsx';
-import SocialLink from './SocialLink.tsx';
-import FooterLinkList from './FooterLinkList.tsx';
+import Logo from '../Logo/index.ts';
+import SocialLink from '../SocialLink/index.ts';
+import FooterLinkList from '../FooterLinkList/index.ts';
 
 interface FooterProps {
   year?: number;

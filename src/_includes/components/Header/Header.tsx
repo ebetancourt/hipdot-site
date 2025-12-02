@@ -1,6 +1,6 @@
 import React from 'react';
-import Logo from './Logo.tsx';
-import Button from './Button.tsx';
+import Logo from '../Logo/index.ts';
+import Button from '../Button/index.ts';
 
 export default function Header() {
   return (

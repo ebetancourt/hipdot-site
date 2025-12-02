@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './Button.tsx';
+import Button from '../Button/index.ts';
 
 interface CtaButton {
   text: string;

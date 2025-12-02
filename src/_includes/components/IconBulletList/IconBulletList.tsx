@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon from './Icon.tsx';
+import Icon from '../Icon/index.ts';
 
 interface IconBulletItem {
   title: string;

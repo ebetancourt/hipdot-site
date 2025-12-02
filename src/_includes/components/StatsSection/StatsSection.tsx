@@ -1,5 +1,5 @@
 import React from 'react';
-import StatCard from './StatCard.tsx';
+import StatCard from '../StatCard/index.ts';
 
 interface Stat {
   number: number;
