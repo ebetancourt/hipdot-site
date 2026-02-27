@@ -14,7 +14,7 @@ interface ProcessSectionProps {
 export default function ProcessSection({ title, steps }: ProcessSectionProps) {
   return (
     <section className="section-work-process">
-      <div className="section-space-bottom">
+      <div className="pt-20 section-space-bottom">
         <div className="container-default">
           <div className="jos mb-[60px]">
             <div className="mx-auto max-w-[843px]">
