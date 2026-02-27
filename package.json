@@ -6,12 +6,10 @@
     "main": "tailwind.config.js",
     "scripts": {
         "clean": "rimraf _site",
-        "dev": "npm-run-all clean --parallel dev:11ty dev:tailwind",
-        "dev:11ty": "eleventy --serve --quiet --incremental",
-        "dev:tailwind": "tailwindcss -i ./src/tailwind.css -o ./assets/css/style.css --watch",
-        "build": "npm-run-all clean build:11ty build:tailwind",
-        "build:11ty": "eleventy",
-        "build:tailwind": "tailwindcss -i ./src/tailwind.css -o ./assets/css/style.css --minify",
+        "dev": "npm-run-all clean dev:serve",
+        "dev:serve": "eleventy --serve --quiet",
+        "build": "npm-run-all clean build:11ty",
+        "build:11ty": "NODE_ENV=production eleventy",
         "storybook": "storybook dev -p 6006",
         "build-storybook": "storybook build"
     },
