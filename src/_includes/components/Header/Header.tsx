@@ -4,7 +4,7 @@ import Button from '../Button/index.ts';
 
 export default function Header() {
   return (
-    <header className="site-header site-header--absolute is--white py-3" id="sticky-menu">
+    <header className="site-header is--white fixed left-0 top-0 z-[999] w-full py-3 backdrop-blur-md bg-white/70 shadow-[0_1px_0_rgba(0,0,0,0.06)]" id="sticky-menu">
       <div className="container-default">
         <div className="flex items-center justify-between gap-x-8">
           {/* Header Logo */}

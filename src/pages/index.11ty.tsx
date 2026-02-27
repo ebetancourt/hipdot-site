@@ -32,7 +32,7 @@ export default function Home({ homepage }: HomePageData) {
           title="Trusted by industry leaders"
           brands={homepage.clientLogos}
           columns={5}
-          darkMode={false}
+          darkMode={true}
         />
 
         <HorizontalLine bgColor="bg-ColorBlack" />

@@ -21,9 +21,9 @@ export default function ClientLogosSection({
   columns = 6,
   darkMode = true,
 }: ClientLogosSectionProps) {
-  const bgColor = darkMode ? 'bg-[#04072a]' : 'bg-white';
+  const bgColor = darkMode ? 'bg-black' : 'bg-white';
   const titleColor = darkMode ? 'text-white' : 'text-black';
-  const itemBgColor = darkMode ? 'bg-[#0d1036]' : 'bg-gray-50';
+  const itemBgColor = darkMode ? 'bg-black' : 'bg-gray-50';
 
   const gridCols = {
     3: 'sm:grid-cols-3',
