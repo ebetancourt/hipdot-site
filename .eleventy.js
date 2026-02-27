@@ -1,6 +1,8 @@
 import "tsx/esm";
 import { renderToStaticMarkup } from "react-dom/server";
 
+const pathPrefix = process.env.PATH_PREFIX || "/";
+
 export default function (eleventyConfig) {
   // TypeScript/TSX support
   eleventyConfig.addExtension(["11ty.tsx", "11ty.ts"], {
@@ -24,6 +26,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addWatchTarget("src/");
 
   return {
+    pathPrefix,
     dir: {
       input: "src",
       output: "_site",

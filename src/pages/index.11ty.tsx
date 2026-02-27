@@ -21,15 +21,19 @@ export default function Home({ homepage }: HomePageData) {
       <Header />
 
       <main className="main-wrapper relative overflow-hidden">
-        <Hero {...homepage.hero} />
+        <div id="hero">
+          <Hero {...homepage.hero} />
+        </div>
 
         <HorizontalLine bgColor="bg-ColorBlack" />
 
         <StatsSection title={homepage.stats.title} stats={homepage.stats.items} />
 
-        <ServicesSection title={homepage.services.title} services={homepage.services.items} />
+        <div id="services">
+          <ServicesSection title={homepage.services.title} services={homepage.services.items} />
+        </div>
 
-        <section className="section-content">
+        <section id="about" className="section-content">
           <div className="section-space">
             <div className="container-default">
               <div className="flex flex-col gap-y-20 lg:gap-y-[100px] xl:gap-y-[120px]">
@@ -40,13 +44,21 @@ export default function Home({ homepage }: HomePageData) {
           </div>
         </section>
 
-        <ProcessSection title={homepage.process.title} steps={homepage.process.steps} />
+        <div id="process">
+          <ProcessSection title={homepage.process.title} steps={homepage.process.steps} />
+        </div>
 
-        <TeamSection title={homepage.team.title} members={homepage.team.members} />
+        <div id="team">
+          <TeamSection title={homepage.team.title} members={homepage.team.members} />
+        </div>
 
-        <FaqSection title={homepage.faq.title} faqs={homepage.faq.items} />
+        <div id="faq">
+          <FaqSection title={homepage.faq.title} faqs={homepage.faq.items} />
+        </div>
 
-        <CtaSection {...homepage.cta} />
+        <div id="contact">
+          <CtaSection {...homepage.cta} />
+        </div>
       </main>
 
       <Footer />

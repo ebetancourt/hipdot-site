@@ -1,7 +1,9 @@
+const prefix = process.env.PATH_PREFIX || "";
+
 export default {
   hero: {
     title: "Smart Solutions for a Modern era",
-    imageSrc: "/assets/img/th-15/hero-img.jpg",
+    imageSrc: `${prefix}/assets/img/th-15/hero-img.jpg`,
     description: "We are dedicated to shaping the future. In the fast-paced world of technology, our company stands as a beacon of innovation and progress.",
     ctaPrimary: { text: "Talk To Us", href: "#" },
     ctaSecondary: { text: "View Our Services", href: "#" }
@@ -44,7 +46,7 @@ export default {
 
   aboutUs: {
     heading: "Know about us",
-    imageSrc: "/assets/img/th-15/content-img-1.jpg",
+    imageSrc: `${prefix}/assets/img/th-15/content-img-1.jpg`,
     imagePosition: "left",
     content: [
       "We started our journey in January 2010. We are innovation-driven and dedicated to shaping the future through forward-thinking and cutting-edge technology solutions. Founded by a team of visionary engineers & entrepreneurs.",
@@ -56,7 +58,7 @@ export default {
 
   whyChooseUs: {
     heading: "Why choose us",
-    imageSrc: "/assets/img/th-15/content-img-2.jpg",
+    imageSrc: `${prefix}/assets/img/th-15/content-img-2.jpg`,
     imagePosition: "right",
     content: "Our core values include the relentless pursuit of excellence, a commitment to ethical and responsible tech development, and a dedication to continuous learning.",
     features: [
@@ -96,12 +98,12 @@ export default {
   team: {
     title: "Meet our team",
     members: [
-      { imageSrc: "/assets/img/th-15/team-img-1.jpg", name: "Adam Smith", title: "Founder & CEO" },
-      { imageSrc: "/assets/img/th-15/team-img-2.jpg", name: "Jones Marco", title: "Chief Operating Officer" },
-      { imageSrc: "/assets/img/th-15/team-img-3.jpg", name: "Marsal Joy", title: "General Manager" },
-      { imageSrc: "/assets/img/th-15/team-img-4.jpg", name: "Douglas Luhan", title: "Sales Executive" },
-      { imageSrc: "/assets/img/th-15/team-img-5.jpg", name: "Alex Taylor", title: "Web Developer" },
-      { imageSrc: "/assets/img/th-15/team-img-6.jpg", name: "Henry Fayol", title: "UI/UX Designer" }
+      { imageSrc: `${prefix}/assets/img/th-15/team-img-1.jpg`, name: "Adam Smith", title: "Founder & CEO" },
+      { imageSrc: `${prefix}/assets/img/th-15/team-img-2.jpg`, name: "Jones Marco", title: "Chief Operating Officer" },
+      { imageSrc: `${prefix}/assets/img/th-15/team-img-3.jpg`, name: "Marsal Joy", title: "General Manager" },
+      { imageSrc: `${prefix}/assets/img/th-15/team-img-4.jpg`, name: "Douglas Luhan", title: "Sales Executive" },
+      { imageSrc: `${prefix}/assets/img/th-15/team-img-5.jpg`, name: "Alex Taylor", title: "Web Developer" },
+      { imageSrc: `${prefix}/assets/img/th-15/team-img-6.jpg`, name: "Henry Fayol", title: "UI/UX Designer" }
     ]
   },
 
@@ -137,11 +139,11 @@ export default {
     ctaText: "View Our Services",
     ctaHref: "#",
     brands: [
-      { src: "/assets/img/th-15/brand-1.png", alt: "brand-1" },
-      { src: "/assets/img/th-15/brand-2.png", alt: "brand-2" },
-      { src: "/assets/img/th-15/brand-3.png", alt: "brand-3" },
-      { src: "/assets/img/th-15/brand-4.png", alt: "brand-4" },
-      { src: "/assets/img/th-15/brand-5.png", alt: "brand-5" }
+      { src: `${prefix}/assets/img/th-15/brand-1.png`, alt: "brand-1" },
+      { src: `${prefix}/assets/img/th-15/brand-2.png`, alt: "brand-2" },
+      { src: `${prefix}/assets/img/th-15/brand-3.png`, alt: "brand-3" },
+      { src: `${prefix}/assets/img/th-15/brand-4.png`, alt: "brand-4" },
+      { src: `${prefix}/assets/img/th-15/brand-5.png`, alt: "brand-5" }
     ]
   }
 };

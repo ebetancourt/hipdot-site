@@ -1,12 +1,14 @@
 import React from 'react';
 
+const prefix = process.env.PATH_PREFIX || "";
+
 interface LogoProps {
   href?: string;
   variant?: 'dark' | 'light';
 }
 
 export default function Logo({ href = '/', variant = 'dark' }: LogoProps) {
-  const logoSrc = `/assets/img/logo-${variant}.png`;
+  const logoSrc = `${prefix}/assets/img/logo-${variant}.png`;
 
   return (
     <a href={href}>

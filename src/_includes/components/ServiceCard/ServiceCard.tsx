@@ -1,5 +1,7 @@
 import React from 'react';
 
+const prefix = process.env.PATH_PREFIX || "";
+
 interface ServiceCardProps {
   title: string;
   description: string;
@@ -24,14 +26,14 @@ export default function ServiceCard({ title, description, link }: ServiceCardPro
           aria-label={`Learn more about ${title}`}
         >
           <img
-            src="/assets/img/icons/icon-white-top-right.svg"
+            src={`${prefix}/assets/img/icons/icon-white-top-right.svg`}
             alt="icon-white-top-right"
             width="43"
             height="43"
             className="absolute inset-0 transition-all duration-300 group-hover:-translate-y-full group-hover:translate-x-full"
           />
           <img
-            src="/assets/img/icons/icon-blue-top-right.svg"
+            src={`${prefix}/assets/img/icons/icon-blue-top-right.svg`}
             alt="icon-blue-top-right"
             width="43"
             height="43"
