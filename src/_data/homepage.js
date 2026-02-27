@@ -2,142 +2,190 @@ const prefix = process.env.PATH_PREFIX || "";
 
 export default {
   hero: {
-    title: "Smart Solutions for a Modern era",
+    title: "Digital Consulting to Drive Strategic Growth and Market Leadership",
     imageSrc: `${prefix}/assets/img/th-15/hero-img.jpg`,
-    description: "We are dedicated to shaping the future. In the fast-paced world of technology, our company stands as a beacon of innovation and progress.",
-    ctaPrimary: { text: "Talk To Us", href: "#" },
-    ctaSecondary: { text: "View Our Services", href: "#" }
+    description: "Empower your business with tailored digital strategies, modern web development, and intelligent automation that drive revenue, streamline operations, and set you apart from the competition.",
+    ctaPrimary: { text: "Get in Touch", href: "#contact" },
+    ctaSecondary: { text: "Explore Our Services", href: "#services" }
   },
 
+  clientLogos: [
+    { src: `${prefix}/assets/img/th-15/brand-1.png`, alt: "Client 1" },
+    { src: `${prefix}/assets/img/th-15/brand-2.png`, alt: "Client 2" },
+    { src: `${prefix}/assets/img/th-15/brand-3.png`, alt: "Client 3" },
+    { src: `${prefix}/assets/img/th-15/brand-4.png`, alt: "Client 4" },
+    { src: `${prefix}/assets/img/th-15/brand-5.png`, alt: "Client 5" },
+    { src: `${prefix}/assets/img/th-15/brand-1.png`, alt: "Client 6" },
+    { src: `${prefix}/assets/img/th-15/brand-2.png`, alt: "Client 7" },
+    { src: `${prefix}/assets/img/th-15/brand-3.png`, alt: "Client 8" },
+    { src: `${prefix}/assets/img/th-15/brand-4.png`, alt: "Client 9" },
+    { src: `${prefix}/assets/img/th-15/brand-5.png`, alt: "Client 10" },
+  ],
+
   stats: {
-    title: "impactful numbers",
+    title: "Results that speak",
     items: [
-      { number: 15, suffix: "+", description: "We have worked with reputation for the last 15 years" },
-      { number: 2, suffix: "M+", description: "Worked with 2M clients in different countries around the world" },
-      { number: 99, suffix: "%", description: "About 99% of our clients express their satisfaction with our work" }
+      { number: 12, suffix: "+", description: "Years delivering digital solutions for brands across every industry" },
+      { number: 200, suffix: "+", description: "Projects launched for startups, agencies, and enterprise organizations" },
+      { number: 98, suffix: "%", description: "Of our clients report measurable improvement in their digital presence" }
     ]
   },
 
   services: {
-    title: "impactful numbers",
+    title: "What we do",
     items: [
       {
-        title: "Digital Transformation",
-        description: "We partner with CTOs and CIOs to co-create and execute long-term digital strategies that increase sales, brand awareness, and operational efficiency.",
-        link: "service-details.html"
+        title: "Digital Strategy & Consulting",
+        description: "We work with founders and executives to craft long-term digital roadmaps that align technology investments with business goals, market positioning, and revenue growth.",
+        link: "#contact"
       },
       {
-        title: "E-Commerce Development",
-        description: "We build high converting, fast-loading, headless eCommerce websites for enterprise brands, that accelerate growth.",
-        link: "service-details.html"
+        title: "Web Design & Development",
+        description: "We design and build high-performance websites and web applications that look exceptional, load fast, and convert visitors into customers.",
+        link: "#contact"
       },
       {
-        title: "Custom Software Development",
-        description: "We work with startups and global enterprises to design and develop custom web & mobile apps that drive their business forward.",
-        link: "service-details.html"
+        title: "E-Commerce & Platform Development",
+        description: "From headless storefronts to custom platforms, we build scalable commerce experiences that accelerate growth for modern brands.",
+        link: "#contact"
       },
       {
-        title: "Website Design & Development",
-        description: "We design and develop beautiful websites that deliver best-in-class experiences to your users.",
-        link: "service-details.html"
+        title: "Automation & AI Integration",
+        description: "We help businesses harness automation and AI to eliminate repetitive work, improve decision-making, and unlock operational efficiency at scale.",
+        link: "#contact"
       }
     ]
   },
 
   aboutUs: {
-    heading: "Know about us",
+    heading: "Who we are",
     imageSrc: `${prefix}/assets/img/th-15/content-img-1.jpg`,
     imagePosition: "left",
     content: [
-      "We started our journey in January 2010. We are innovation-driven and dedicated to shaping the future through forward-thinking and cutting-edge technology solutions. Founded by a team of visionary engineers & entrepreneurs.",
-      "We believe that technology should not only meet the needs of today but also anticipate the challenges of tomorrow. We are committed to creating products & services that empower individuals and businesses, making their digital experiences smarter, safer, and more efficient."
+      "HipDot Media is a digital consultancy built for businesses that refuse to stand still. We partner with ambitious teams to solve complex digital challenges — from reimagining web experiences to automating workflows that drain time and resources.",
+      "Our approach is hands-on and results-driven. We don't hand you a slide deck and walk away. We embed with your team, understand your market, and build solutions that deliver measurable impact from day one."
     ],
-    ctaText: "Discover More",
-    ctaHref: "#"
+    ctaText: "Learn More",
+    ctaHref: "#contact"
   },
 
   whyChooseUs: {
-    heading: "Why choose us",
+    heading: "Why work with us",
     imageSrc: `${prefix}/assets/img/th-15/content-img-2.jpg`,
     imagePosition: "right",
-    content: "Our core values include the relentless pursuit of excellence, a commitment to ethical and responsible tech development, and a dedication to continuous learning.",
+    content: "Every engagement is tailored to your business. We combine deep technical expertise with strategic thinking to deliver solutions that move the needle — not just check a box.",
     features: [
       {
-        title: "Expertise & Specialization:",
-        description: " We're experts in respective fields. They specialize in various aspects of technology."
+        title: "Proven Track Record:",
+        description: " Over a decade of delivering digital solutions for brands of every size, from early-stage startups to established enterprises."
       },
       {
-        title: "Cost Efficiency:",
-        description: " We can also scale services up or down based on making it a flexible and cost-efficient option."
+        title: "Tailored Strategies:",
+        description: " No cookie-cutter approaches. We design solutions around your specific goals, workflows, and competitive landscape."
       },
       {
-        title: "Security & Compliance:",
-        description: " Help businesses maintain high levels of security and ensure compliance with industry-specific regulations."
+        title: "End-to-End Delivery:",
+        description: " From strategy through implementation and ongoing optimization, we own the entire process so nothing falls through the cracks."
+      }
+    ]
+  },
+
+  solutions: {
+    title: "Solutions for your business",
+    subtitle: "From intelligent automation to full-scale digital transformation, we deliver practical solutions tailored to your industry and objectives.",
+    items: [
+      {
+        title: "Custom Web Applications",
+        description: "Purpose-built web applications designed around your unique workflows. We architect, build, and deploy solutions that integrate seamlessly with your existing tools and scale with your growth.",
+        icon: "check",
+        buttonText: "Learn More",
+        buttonHref: "#contact"
+      },
+      {
+        title: "AI-Powered Automation",
+        description: "Streamline operations with intelligent automation. From customer support chatbots to data extraction pipelines, we implement AI solutions that save time and reduce human error.",
+        icon: "check",
+        buttonText: "Learn More",
+        buttonHref: "#contact"
+      },
+      {
+        title: "Digital Transformation",
+        description: "Modernize legacy systems and processes with a clear, phased approach. We help organizations embrace digital-first thinking without disrupting day-to-day operations.",
+        icon: "check",
+        buttonText: "Learn More",
+        buttonHref: "#contact"
+      },
+      {
+        title: "Something Else?",
+        description: "Have a challenge that doesn't fit neatly into a category? We thrive on unique problems. Tell us what you're working on and we'll figure out the best path forward together.",
+        icon: "question",
+        buttonText: "Get in Touch",
+        buttonHref: "#contact"
       }
     ]
   },
 
   process: {
-    title: "Our work process",
+    title: "How we work",
     steps: [
       {
-        title: "Project Discovery",
-        description: "We create a detailed project plan with work outlines, milestones, timelines."
+        title: "Discovery & Strategy",
+        description: "We dig into your business goals, audience, and competitive landscape to define a clear digital strategy and project roadmap."
       },
       {
-        title: "Implementation",
-        description: "Developers & engineers is essential in creating the necessary solutions."
+        title: "Design & Build",
+        description: "Our team designs and develops your solution with constant collaboration, iterating quickly to get it right."
       },
       {
-        title: "Establishment",
-        description: "Includes all functional performance testing, testing, and security testing."
+        title: "Launch & Optimize",
+        description: "We launch, measure results, and continuously refine to ensure long-term performance and growth."
       }
     ]
   },
 
   team: {
-    title: "Meet our team",
+    title: "The team behind the work",
     members: [
       { imageSrc: `${prefix}/assets/img/th-15/team-img-1.jpg`, name: "Adam Smith", title: "Founder & CEO" },
       { imageSrc: `${prefix}/assets/img/th-15/team-img-2.jpg`, name: "Jones Marco", title: "Chief Operating Officer" },
-      { imageSrc: `${prefix}/assets/img/th-15/team-img-3.jpg`, name: "Marsal Joy", title: "General Manager" },
-      { imageSrc: `${prefix}/assets/img/th-15/team-img-4.jpg`, name: "Douglas Luhan", title: "Sales Executive" },
-      { imageSrc: `${prefix}/assets/img/th-15/team-img-5.jpg`, name: "Alex Taylor", title: "Web Developer" },
-      { imageSrc: `${prefix}/assets/img/th-15/team-img-6.jpg`, name: "Henry Fayol", title: "UI/UX Designer" }
+      { imageSrc: `${prefix}/assets/img/th-15/team-img-3.jpg`, name: "Marsal Joy", title: "Head of Strategy" },
+      { imageSrc: `${prefix}/assets/img/th-15/team-img-4.jpg`, name: "Douglas Luhan", title: "Business Development" },
+      { imageSrc: `${prefix}/assets/img/th-15/team-img-5.jpg`, name: "Alex Taylor", title: "Lead Developer" },
+      { imageSrc: `${prefix}/assets/img/th-15/team-img-6.jpg`, name: "Henry Fayol", title: "UX Design Lead" }
     ]
   },
 
   faq: {
-    title: "We're often asked",
+    title: "Frequently asked questions",
     items: [
       {
-        question: "What does your tech company do?",
-        answer: "HipDot Media is not just a tech company; it's a catalyst for progress, a hub of innovation, and a partner in your digital journey & connected future of technology."
+        question: "What services does HipDot Media offer?",
+        answer: "We offer digital strategy consulting, web design and development, e-commerce platform builds, automation and AI integration, and ongoing optimization services. Our goal is to help businesses leverage technology to grow faster and operate more efficiently."
       },
       {
-        question: "What industries or sectors do you serve?",
-        answer: "HipDot Media is not just a tech company; it's a catalyst for progress, a hub of innovation, and a partner in your digital journey & connected future of technology."
+        question: "How do you tailor your approach to each client?",
+        answer: "Every engagement starts with a deep discovery phase where we learn your business, goals, audience, and competitive landscape. From there, we design a solution and strategy built specifically around your needs — no templates, no one-size-fits-all."
       },
       {
-        question: "How much does a custom software solution cost?",
-        answer: "HipDot Media is not just a tech company; it's a catalyst for progress, a hub of innovation, and a partner in your digital journey & connected future of technology."
+        question: "What industries do you work with?",
+        answer: "We work across a wide range of industries including technology, healthcare, finance, retail, professional services, and more. If your business has a digital presence or wants to build one, we can help."
       },
       {
-        question: "Is data protection and privacy secure?",
-        answer: "HipDot Media is not just a tech company; it's a catalyst for progress, a hub of innovation, and a partner in your digital journey & connected future of technology."
+        question: "How long does a typical project take?",
+        answer: "Timelines vary based on scope and complexity. A focused website redesign might take 6-8 weeks, while a full digital transformation engagement can span several months. We'll give you a clear timeline during discovery."
       },
       {
-        question: "Which software is right for me?",
-        answer: "HipDot Media is not just a tech company; it's a catalyst for progress, a hub of innovation, and a partner in your digital journey & connected future of technology."
+        question: "Do you offer ongoing support after launch?",
+        answer: "Absolutely. We offer ongoing optimization, maintenance, and strategic support to ensure your digital presence continues to perform and evolve as your business grows."
       }
     ]
   },
 
   cta: {
-    heading: "Are you ready to get started?",
-    description: "Join us on this exciting journey as we continue to redefine what is possible with ever-evolving technology.",
-    ctaText: "View Our Services",
-    ctaHref: "#",
+    heading: "Ready to elevate your digital presence?",
+    description: "Let's discuss how we can help you solve complex challenges, reach new audiences, and build a digital experience that drives real results.",
+    ctaText: "Explore Our Services",
+    ctaHref: "#services",
     brands: [
       { src: `${prefix}/assets/img/th-15/brand-1.png`, alt: "brand-1" },
       { src: `${prefix}/assets/img/th-15/brand-2.png`, alt: "brand-2" },
