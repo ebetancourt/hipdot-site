@@ -16,7 +16,7 @@ export default function ProcessStep({ stepNumber, title, description, delay = 0 
       <p className="m-0 text-lg leading-[1.33] -tracking-[0.5px] text-[#2C2C2C] md:text-xl xl:text-2xl">
         {description}
       </p>
-      <div className="absolute -top-[3px] left-0 hidden h-[3px] w-full scale-x-0 overflow-hidden rounded-[50px] bg-[#0000FF] transition-all duration-300 group-hover:scale-x-100 lg:block"></div>
+      <div className="absolute -top-[3px] left-0 hidden h-[3px] w-full scale-x-0 overflow-hidden rounded-[50px] bg-[#002D62] transition-all duration-300 group-hover:scale-x-100 lg:block"></div>
     </div>
   );
 }

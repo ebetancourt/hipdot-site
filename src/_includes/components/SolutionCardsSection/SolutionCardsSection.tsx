@@ -31,7 +31,7 @@ export default function SolutionCardsSection({
     if (iconType === 'check') {
       return (
         <svg
-          className="h-12 w-12 text-[#3e32da]"
+          className="h-12 w-12 text-[#002D62]"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ export default function SolutionCardsSection({
     } else if (iconType === 'question') {
       return (
         <svg
-          className="h-12 w-12 text-[#3e32da]"
+          className="h-12 w-12 text-[#002D62]"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,7 @@ export default function SolutionCardsSection({
           {solutions.map((solution, index) => (
             <div
               key={index}
-              className="group rounded-2xl border border-gray-200 bg-white p-8 transition-all duration-300 hover:border-[#3e32da] hover:shadow-lg"
+              className="group rounded-2xl border border-gray-200 bg-white p-8 transition-all duration-300 hover:border-[#002D62] hover:shadow-lg"
             >
               {solution.icon && (
                 <div className="mb-6">
@@ -103,7 +103,7 @@ export default function SolutionCardsSection({
               {solution.buttonText && solution.buttonHref && (
                 <a
                   href={solution.buttonHref}
-                  className="inline-block rounded-lg border-2 border-[#3e32da] bg-transparent px-6 py-2.5 text-sm font-semibold text-[#3e32da] transition-all duration-300 hover:bg-[#3e32da] hover:text-white"
+                  className="inline-block rounded-lg border-2 border-[#002D62] bg-transparent px-6 py-2.5 text-sm font-semibold text-[#002D62] transition-all duration-300 hover:bg-[#002D62] hover:text-white"
                 >
                   {solution.buttonText}
                 </a>

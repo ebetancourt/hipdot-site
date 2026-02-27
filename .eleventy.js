@@ -19,10 +19,10 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets/img");
   eleventyConfig.addPassthroughCopy("assets/fonts");
   eleventyConfig.addPassthroughCopy("assets/js");
-  eleventyConfig.addPassthroughCopy("assets/css/vendors");
-  eleventyConfig.addPassthroughCopy("assets/css/custom.css");
+  eleventyConfig.addPassthroughCopy("assets/css");
 
-  // Watch CSS for changes
+  // Watch CSS and source for changes
+  eleventyConfig.addWatchTarget("assets/css/");
   eleventyConfig.addWatchTarget("src/");
 
   return {

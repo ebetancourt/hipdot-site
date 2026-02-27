@@ -44,7 +44,7 @@ export const SolidColor: Story = {
     buttonText: 'Schedule Consultation',
     buttonHref: '#',
     backgroundType: 'solid',
-    backgroundColor: '#0000FF',
+    backgroundColor: '#002D62',
   },
 };
 

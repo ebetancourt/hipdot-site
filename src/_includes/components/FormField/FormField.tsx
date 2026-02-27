@@ -22,7 +22,7 @@ export default function FormField({
   required = false,
   options = []
 }: FormFieldProps) {
-  const inputClasses = "rounded-[5px] border border-[#B8C1CC] px-4 py-2 outline-none transition-all duration-150 focus:border-[#0000FF] focus:text-black lg:px-[30px] lg:py-[15px]";
+  const inputClasses = "rounded-[5px] border border-[#B8C1CC] px-4 py-2 outline-none transition-all duration-150 focus:border-[#002D62] focus:text-black lg:px-[30px] lg:py-[15px]";
 
   return (
     <div className="flex flex-col">

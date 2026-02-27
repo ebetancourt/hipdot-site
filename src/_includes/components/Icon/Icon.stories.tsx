@@ -16,7 +16,7 @@ type Story = StoryObj<typeof meta>;
 export const Check: Story = {
   args: {
     name: 'solid fa-circle-check',
-    className: 'text-[#0000FF] text-2xl',
+    className: 'text-[#002D62] text-2xl',
   },
 };
 

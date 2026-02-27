@@ -19,7 +19,7 @@ interface CtaSectionProps {
 export default function CtaSection({ heading, description, ctaText, ctaHref, brands }: CtaSectionProps) {
   return (
     <section className="section-cta">
-      <div className="bg-[#0000FF]">
+      <div className="bg-[#002D62]">
         <div className="section-space">
           <div className="container-default">
             <div className="grid grid-cols-1 gap-[60px] lg:grid-cols-[1fr_minmax(0,_0.7fr)] xl:gap-20">
@@ -84,7 +84,7 @@ export default function CtaSection({ heading, description, ctaText, ctaHref, bra
 
                   <button
                     type="submit"
-                    className="btn is-large rounded-[3px] border-[#0000FF] bg-[#0000FF] text-white hover:bg-white hover:text-[#0000FF]"
+                    className="btn is-large rounded-[3px] border-[#002D62] bg-[#002D62] text-white hover:bg-white hover:text-[#002D62]"
                   >
                     Send Message
                   </button>

@@ -8,11 +8,11 @@ interface LogoProps {
 }
 
 export default function Logo({ href = '/', variant = 'dark' }: LogoProps) {
-  const logoSrc = `${prefix}/assets/img/logo-${variant}.png`;
+  const logoSrc = `${prefix}/assets/img/hipdot-wordmark.png`;
 
   return (
     <a href={href}>
-      <img src={logoSrc} alt="HipDot Media" width="109" height="24" />
+      <img src={logoSrc} alt="HipDot Media" width="120" height="32" />
     </a>
   );
 }

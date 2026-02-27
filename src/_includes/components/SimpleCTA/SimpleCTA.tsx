@@ -17,14 +17,14 @@ export default function SimpleCTA({
   buttonHref,
   backgroundType = 'gradient',
   backgroundImage,
-  backgroundColor = '#3e32da',
+  backgroundColor = '#002D62',
   textColor = 'text-white',
 }: SimpleCTAProps) {
   let backgroundClasses = '';
   let backgroundStyle: React.CSSProperties = {};
 
   if (backgroundType === 'gradient') {
-    backgroundClasses = 'bg-gradient-to-r from-[#3e32da] to-[#5e4eda]';
+    backgroundClasses = 'bg-gradient-to-r from-[#002D62] to-[#003D82]';
   } else if (backgroundType === 'image' && backgroundImage) {
     backgroundClasses = 'bg-cover bg-center bg-no-repeat';
     backgroundStyle = { backgroundImage: `url(${backgroundImage})` };
@@ -51,7 +51,7 @@ export default function SimpleCTA({
           <div className="flex justify-center">
             <a
               href={buttonHref}
-              className="inline-block rounded-xl bg-white px-10 py-[18px] text-base font-semibold text-[#3e32da] transition-all duration-300 hover:bg-opacity-90 hover:shadow-lg"
+              className="inline-block rounded-xl bg-white px-10 py-[18px] text-base font-semibold text-[#002D62] transition-all duration-300 hover:bg-opacity-90 hover:shadow-lg"
             >
               {buttonText}
             </a>

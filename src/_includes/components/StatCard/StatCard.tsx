@@ -14,7 +14,7 @@ export default function StatCard({ number, suffix, description, delay = 0 }: Sta
       data-jos_delay={delay}
     >
       <div
-        className="mb-[5px] font-Syne text-6xl font-semibold uppercase leading-[1.5] text-[#00F] lg:text-7xl xl:text-[90px]"
+        className="mb-[5px] font-Syne text-6xl font-semibold uppercase leading-[1.5] text-[#002D62] lg:text-7xl xl:text-[90px]"
         data-module="countup"
       >
         <span className="start-number text-black" data-countup-number={number}>
