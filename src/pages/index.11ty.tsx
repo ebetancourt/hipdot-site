@@ -56,7 +56,7 @@ export default function Home({ homepage }: HomePageData) {
 
 export const data = {
   layout: "layouts/base.njk",
-  title: "Masco - Saas Software Startup Tailwind Template",
-  description: "AIMass Tailwind based SASS Template",
+  title: "HipDot Media",
+  description: "Smart Solutions for a Modern Era",
   permalink: "/index.html",
 };

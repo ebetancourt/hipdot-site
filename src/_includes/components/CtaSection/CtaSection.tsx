@@ -58,7 +58,7 @@ export default function CtaSection({ heading, description, ctaText, ctaHref, bra
                 </div>
               </div>
 
-              <div className="jos rounded-[5px] bg-white p-10" data-jos_animation="fade-right">
+              <div className="jos rounded-[5px] bg-white dark:bg-dark-light p-10" data-jos_animation="fade-right">
                 <form action="#" method="post" className="flex flex-col gap-y-6">
                   <FormField
                     type="text"

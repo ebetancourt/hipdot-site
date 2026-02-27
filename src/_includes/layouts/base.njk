@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ title }} - Masco</title>
+    <title>{{ title }} - HipDot Media</title>
     <meta name="description" content="{{ description }}" />
+
+    <!-- Dark mode detection (runs before render to prevent flash) -->
+    <script>
+      (function() {
+        var theme = localStorage.getItem('theme');
+        if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
 
     <!-- Favicon -->
     <link rel="icon" href="/assets/img/favicon.png" />
@@ -27,9 +37,20 @@
     <link href="/assets/css/style.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="page-wrapper relative z-[1] bg-white">
+    <div class="page-wrapper relative z-[1] bg-white dark:bg-dark">
         {{ content | safe }}
     </div>
+
+    <!-- Theme Toggle -->
+    <button
+      id="theme-toggle"
+      type="button"
+      aria-label="Toggle dark mode"
+      class="fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-black text-white shadow-lg transition-all duration-300 hover:scale-110 dark:bg-white dark:text-black"
+    >
+      <i class="fa-solid fa-moon dark:hidden"></i>
+      <i class="fa-solid fa-sun hidden dark:inline"></i>
+    </button>
 
     <!-- Vendor Scripts -->
     <script src="/assets/js/vendors/counterup.js" type="module"></script>
@@ -38,5 +59,14 @@
     <script src="/assets/js/vendors/jos.min.js"></script>
     <script src="/assets/js/vendors/menu.js"></script>
     <script src="/assets/js/main.js"></script>
+
+    <!-- Theme Toggle Script -->
+    <script>
+      document.getElementById('theme-toggle').addEventListener('click', function() {
+        var html = document.documentElement;
+        html.classList.toggle('dark');
+        localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+      });
+    </script>
 </body>
 </html>

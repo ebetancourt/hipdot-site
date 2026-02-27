@@ -20,7 +20,7 @@ export default function StatsSection({ title, stats }: StatsSectionProps) {
           <div className="jos mb-[60px]">
             <div className="mx-auto max-w-[843px]">
               <div className="mb-5">
-                <h2 className="text-center font-Syne text-4xl font-semibold uppercase leading-[1.07] text-black sm:text-5xl lg:text-6xl xl:text-[65px]">
+                <h2 className="text-center font-Syne text-4xl font-semibold uppercase leading-[1.07] text-black dark:text-white sm:text-5xl lg:text-6xl xl:text-[65px]">
                   {title}
                 </h2>
               </div>

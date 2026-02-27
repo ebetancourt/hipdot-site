@@ -11,7 +11,7 @@ export default function Footer({ year = new Date().getFullYear() }: FooterProps)
   return (
     <footer className="section-footer">
       {/* Footer Area Center */}
-      <div className="bg-white">
+      <div className="bg-white dark:bg-dark">
         {/* Footer Center Spacing */}
         <div className="py-[60px] lg:py-20">
           {/* Section Container */}
@@ -32,7 +32,7 @@ export default function Footer({ year = new Date().getFullYear() }: FooterProps)
               <FooterLinkList
                 title="Learn"
                 links={[
-                  { label: 'Masco Blog', href: 'blog.html' },
+                  { label: 'HipDot Blog', href: 'blog.html' },
                   { label: 'Cold Email', href: 'index-6.html' },
                   { label: 'Prospecting Podcast', href: 'index-2.html' },
                   { label: 'Follow-Up Strategy', href: 'index-14.html' },
@@ -89,7 +89,7 @@ export default function Footer({ year = new Date().getFullYear() }: FooterProps)
       {/* Footer Area Center */}
       <div className="horizontal-line -mt-px bg-black"></div>
       {/* Footer Bottom */}
-      <div className="bg-white text-black">
+      <div className="bg-white dark:bg-dark text-black dark:text-white">
         {/* Footer Bottom Spacing */}
         <div className="py-10">
           {/* Section Container */}

@@ -1,4 +1,4 @@
-# Masco - Eleventy + TypeScript/React Migration
+# HipDot Media - Eleventy + TypeScript/React Site
 
 A modern, component-based architecture using Eleventy 3.0+ with TypeScript/React SSR.
 

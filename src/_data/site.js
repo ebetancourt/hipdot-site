@@ -1,5 +1,5 @@
 export default {
-  title: "Masco",
+  title: "HipDot Media",
   description: "Smart Solutions for a Modern Era",
-  url: "https://masco.example.com",
+  url: "https://ebetancourt.github.io/hipdot-site",
 };
