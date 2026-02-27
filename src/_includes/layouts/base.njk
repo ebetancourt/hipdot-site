@@ -38,5 +38,44 @@
     <script src="{{ site.pathPrefix }}/assets/js/vendors/jos.min.js"></script>
     <script src="{{ site.pathPrefix }}/assets/js/vendors/menu.js"></script>
     <script src="{{ site.pathPrefix }}/assets/js/main.js"></script>
+
+    <!-- Contact Form Submission -->
+    <script>
+      (function() {
+        var FORM_ENDPOINT = 'https://hipdot-contact-form.elliot-ee6.workers.dev';
+        var form = document.getElementById('contact-form');
+        if (!form) return;
+
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          var btn = form.querySelector('button[type="submit"]');
+          var name = form.querySelector('#name').value.trim();
+          var email = form.querySelector('#email').value.trim();
+          var message = form.querySelector('#message').value.trim();
+
+          btn.disabled = true;
+          btn.textContent = 'Sending...';
+
+          fetch(FORM_ENDPOINT, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name: name, email: email, message: message })
+          })
+          .then(function(res) {
+            if (!res.ok) return res.json().then(function(err) { throw err; });
+            return res.json();
+          })
+          .then(function() {
+            form.innerHTML = '<p class="text-lg font-semibold text-black">Message received. We\'ll be in touch within 24 hours.</p>';
+          })
+          .catch(function(err) {
+            console.error('Form submission error:', err);
+            btn.disabled = false;
+            btn.textContent = 'Send Message';
+            alert('Something went wrong. Please try again.');
+          });
+        });
+      })();
+    </script>
 </body>
 </html>

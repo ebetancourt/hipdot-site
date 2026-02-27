@@ -59,38 +59,26 @@ export default function CtaSection({ heading, description, ctaText, ctaHref, bra
               </div>
 
               <div className="jos rounded-[5px] bg-white p-10" data-jos_animation="fade-right">
-                <form action="#" method="post" className="flex flex-col gap-y-6">
+                <form id="contact-form" className="flex flex-col gap-y-6">
                   <FormField
                     type="text"
-                    label="Your name"
-                    id="cta-name"
+                    label="Full name"
+                    id="name"
                     placeholder="Enter your full name"
                     required
                   />
                   <FormField
                     type="email"
                     label="Email address"
-                    id="cta-email"
+                    id="email"
                     placeholder="Enter your email"
                     required
                   />
                   <FormField
-                    type="select"
-                    label="Email address"
-                    id="cta-service"
-                    placeholder="Select a service"
-                    required
-                    options={[
-                      { value: 'ui/ux design', label: 'ui/ux design' },
-                      { value: 'web development', label: 'web development' },
-                      { value: 'cloud hosting', label: 'cloud hosting' }
-                    ]}
-                  />
-                  <FormField
                     type="textarea"
-                    label="Write your message"
-                    id="cta-message"
-                    placeholder="Write us your question here..."
+                    label="Your message"
+                    id="message"
+                    placeholder="Tell us about your project or question..."
                     required
                   />
 
