@@ -11,7 +11,7 @@ export default function Footer({ year = new Date().getFullYear() }: FooterProps)
   return (
     <footer className="section-footer">
       {/* Footer Area Center */}
-      <div className="bg-white dark:bg-dark">
+      <div className="bg-white">
         {/* Footer Center Spacing */}
         <div className="py-[60px] lg:py-20">
           {/* Section Container */}
@@ -89,7 +89,7 @@ export default function Footer({ year = new Date().getFullYear() }: FooterProps)
       {/* Footer Area Center */}
       <div className="horizontal-line -mt-px bg-black"></div>
       {/* Footer Bottom */}
-      <div className="bg-white dark:bg-dark text-black dark:text-white">
+      <div className="bg-white text-black">
         {/* Footer Bottom Spacing */}
         <div className="py-10">
           {/* Section Container */}

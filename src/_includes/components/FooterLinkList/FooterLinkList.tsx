@@ -14,7 +14,7 @@ interface FooterLinkListProps {
 export default function FooterLinkList({ title, links }: FooterLinkListProps) {
   return (
     <div className="flex flex-col gap-y-6">
-      <div className="text-xl font-semibold capitalize text-black dark:text-white">
+      <div className="text-xl font-semibold capitalize text-black">
         {title}
       </div>
       <ul className="flex flex-col gap-y-[10px] capitalize">
@@ -22,7 +22,7 @@ export default function FooterLinkList({ title, links }: FooterLinkListProps) {
           <li key={idx}>
             <a
               href={link.href}
-              className="text-[#2C2C2C] dark:text-white/70 underline-offset-4 transition-all duration-300 ease-linear hover:underline"
+              className="text-[#2C2C2C] underline-offset-4 transition-all duration-300 ease-linear hover:underline"
               target={link.external ? "_blank" : undefined}
               rel={link.external ? "noopener noreferrer" : undefined}
             >

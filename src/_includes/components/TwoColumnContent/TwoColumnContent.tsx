@@ -34,7 +34,7 @@ export default function TwoColumnContent({
       <div className={`jos ${contentOrder}`} data-jos_animation="fade-right">
         <div>
           <div className="mb-6">
-            <h2 className="font-Syne text-4xl font-semibold uppercase leading-[1.07] text-black dark:text-white sm:text-5xl lg:text-6xl xl:text-[65px]">
+            <h2 className="font-Syne text-4xl font-semibold uppercase leading-[1.07] text-black sm:text-5xl lg:text-6xl xl:text-[65px]">
               {heading}
             </h2>
           </div>
@@ -42,12 +42,12 @@ export default function TwoColumnContent({
 
         {Array.isArray(content) ? (
           content.map((paragraph, idx) => (
-            <p key={idx} className="text-lg leading-[1.33] -tracking-[0.5px] text-[#2C2C2C] dark:text-white/70 md:text-xl xl:text-2xl">
+            <p key={idx} className="text-lg leading-[1.33] -tracking-[0.5px] text-[#2C2C2C] md:text-xl xl:text-2xl">
               {paragraph}
             </p>
           ))
         ) : (
-          <p className="text-lg leading-[1.33] -tracking-[0.5px] text-[#2C2C2C] dark:text-white/70 md:text-xl xl:text-2xl">
+          <p className="text-lg leading-[1.33] -tracking-[0.5px] text-[#2C2C2C] md:text-xl xl:text-2xl">
             {content}
           </p>
         )}

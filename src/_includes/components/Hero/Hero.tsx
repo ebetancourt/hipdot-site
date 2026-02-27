@@ -22,7 +22,7 @@ export default function Hero({ title, imageSrc, description, ctaPrimary, ctaSeco
           <div className="container-default">
             <div>
               <div className="jos mb-6 max-w-xl lg:max-w-2xl xl:max-w-3xl xxl:max-w-[1076px]">
-                <h1 className="mb-6 font-Syne text-[40px] font-semibold uppercase leading-none -tracking-[2px] text-black dark:text-white sm:text-5xl lg:text-6xl xl:text-[90px]">
+                <h1 className="mb-6 font-Syne text-[40px] font-semibold uppercase leading-none -tracking-[2px] text-black sm:text-5xl lg:text-6xl xl:text-[90px]">
                   {title}
                 </h1>
               </div>
@@ -39,7 +39,7 @@ export default function Hero({ title, imageSrc, description, ctaPrimary, ctaSeco
               </div>
 
               <div className="flex flex-col items-start justify-between gap-x-[200px] xl:flex-row xl:items-center">
-                <p className="text-2xl font-semibold text-[#2C2C2C] dark:text-white/80 xl:max-w-[665px]">
+                <p className="text-2xl font-semibold text-[#2C2C2C] xl:max-w-[665px]">
                   {description}
                 </p>
                 <div className="mb-3 flex flex-wrap gap-6">
