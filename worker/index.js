@@ -28,30 +28,27 @@ export default {
         });
       }
 
-      const res = await fetch(
-        `https://api.emailoctopus.com/lists/${env.EMAILOCTOPUS_LIST_ID}/contacts`,
-        {
-          method: 'PUT',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${env.EMAILOCTOPUS_API_KEY}`,
+      const res = await fetch('https://api.brevo.com/v3/contacts', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'api-key': env.BREVO_API_KEY,
+        },
+        body: JSON.stringify({
+          email,
+          attributes: {
+            FULLNAME: name,
+            CONTACT_MESSAGE: message || '',
+            CONTACT_BRAND: env.CONTACT_BRAND,
+            CONTACT_SOURCE: 'website-inquiry',
           },
-          body: JSON.stringify({
-            email_address: email,
-            fields: {
-              FullName: name,
-              ContactMessage: message || '',
-              ContactBrand: env.CONTACT_BRAND,
-            },
-            tags: { 'website-inquiry': true, [env.CONTACT_BRAND]: true },
-            status: 'subscribed',
-          }),
-        }
-      );
-
-      const data = await res.json();
+          listIds: [parseInt(env.BREVO_LIST_ID)],
+          updateEnabled: true,
+        }),
+      });
 
       if (!res.ok) {
+        const data = await res.json();
         return new Response(JSON.stringify({ error: 'Submission failed', details: data }), {
           status: res.status,
           headers: { ...corsHeaders, 'Content-Type': 'application/json' },
